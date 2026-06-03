@@ -7,15 +7,15 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
-
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    public void OnMove(InputValue _value)
     {
-        moveInput = context.ReadValue<Vector2>();
+        moveInput = _value.Get<Vector2>();
     }
 
     private void FixedUpdate()
