@@ -105,3 +105,6 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+.idea/.idea.book-unity6-bullet-hell-shooter/.idea/encodings.xml
+.idea/.idea.book-unity6-bullet-hell-shooter/.idea/indexLayout.xml
+.idea/.idea.book-unity6-bullet-hell-shooter/.idea/vcs.xml
