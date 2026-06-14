@@ -14,16 +14,16 @@ public class PlayerShooter : MonoBehaviour
     {
         if (value.isPressed == true)
         {
-            Debug.Log("isPressed == true");
             isFirePressed = true;
-            //Fire();
+            fireTimer = fireInterval;
         }
         else
         {
-            Debug.Log("isPressed == false");
             isFirePressed = false;
+            fireTimer = 0f;
         }
     }
+    
     private void Update()
     {
         if (!isFirePressed)
