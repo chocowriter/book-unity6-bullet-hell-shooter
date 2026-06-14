@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private float lifeTime = 3f;
+
+    private float timer;
+
+    private void OnEnable()
     {
-        
+        timer = 0f;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+
+        timer += Time.deltaTime;
+        if (timer >= lifeTime)
+        {
+            Destroy(gameObject);
+        }
     }
 }
