@@ -10,7 +10,7 @@ public class PlayerShooter : MonoBehaviour
     private bool isFirePressed = false;
     private float fireTimer = 0f;
 
-    public void OnAttack(InputValue value)
+    public void OnFire(InputValue value)
     {
         if (value.isPressed == true)
         {
