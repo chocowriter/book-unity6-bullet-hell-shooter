@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 1708862655}
   - component: {fileID: 1708862654}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Square_Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,13 +350,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2734910812522797795, guid: 074dabfdeac7c404393261b2c80ce7f2,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 074dabfdeac7c404393261b2c80ce7f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7.243535, y: 21.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -484,6 +483,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138033253611855556, guid: 81b4dadf84e3ae7448290540c4195687,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138033253611855556, guid: 81b4dadf84e3ae7448290540c4195687,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 8988517060874519923, guid: 81b4dadf84e3ae7448290540c4195687,
         type: 3}
