@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerShooter : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform firePoint;
+    [SerializeField] private Transform[] firePoints;
     [SerializeField] private float fireInterval = 0.15f;
 
     private bool isFirePressed = false;
@@ -41,6 +41,9 @@ public class PlayerShooter : MonoBehaviour
 
     private void Fire()
     {
-        Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        foreach (Transform firePoint in firePoints)
+        {
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
     }
 }
